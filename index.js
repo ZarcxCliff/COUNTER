@@ -1,21 +1,19 @@
+let incre = document.getElementById("count");
+ let tot= document.getElementById("total")   
+let sav = document.getElementById("save");
 let count = 0;
 
 function increment() {
     count++;
-    let counter = count;
-    console.log(counter);
-    document.getElementById("count").
-        innerText = counter;
-    
+    incre.innerText = count;
 }
-// increment()
+
 function save() {
-    let constr = count + "   -  ";
-    
-    document.getElementById("save").
-        textContent += constr;
+    let register = count + " - ";
+    let total = count ;
+    sav.textContent += register;
+    tot.textContent = total;
+    incre.textContent = 0;
+    count = 0;
+
 }
-
-
-// let message = `we have loggged`;
-// console.log(message)
