@@ -13,7 +13,7 @@ function save() {
     let constr = count + "   -  ";
     
     document.getElementById("save").
-        innerText += constr;
+        textContent += constr;
 }
 
 
